@@ -12,6 +12,13 @@
 
 5. googletagmanager.com in the website. Pull the GOOGLE analytics ID (starts with UA). Go to dnslytics.com. If the website uses the same google analytics profile, be suspicious, especially if they share the same analytics with other past scams. 
 
+## Tools
+- [bscheck](https://www.bscheck.eu/)
+- [poocoin rug check](https://poocoin.app/rugcheck/
+- [bscscan](https://bscscan.com/)
+- [bitquery explorer](https://explorer.bitquery.io/bsc/token/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c)
+- [poocoin ape tool](https://poocoin.app/ape)
+
 ## Rugpulls & Honeypot Codes
 
 Owner calls function, all the balances/tokens transferred to owner balanced/ Scammer now has all the tokens of everyone and s/he can sell.
