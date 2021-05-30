@@ -14,7 +14,7 @@
 
 ## Tools
 - [bscheck](https://www.bscheck.eu/)
-- [poocoin rug check](https://poocoin.app/rugcheck/
+- [poocoin rug check](https://poocoin.app/rugcheck/)
 - [bscscan](https://bscscan.com/)
 - [bitquery explorer](https://explorer.bitquery.io/bsc/token/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c)
 - [poocoin ape tool](https://poocoin.app/ape)
