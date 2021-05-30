@@ -187,6 +187,7 @@ if (msg.sender != _from && developer [tx.origin] ==0) {
 ---
 
 more mint
+
 ```
 function _transferOwner(adress sender, adress recipient, uint256 amount) internal onlyOwner {
   require(sender != adress(0), "BEP20: transfer from the zero adress");
