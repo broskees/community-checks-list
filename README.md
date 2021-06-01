@@ -10,6 +10,7 @@
 
 ### Ownership
 Is ownership renounced? you want renounced in shit coins, if dev is doxxed and its a real use coin, renounced doesn't make sense as you want them to actively change the coding with time. You're looking for something like this:
+
 ![Ownership Renounced](https://github.com/broskees/community-checks-list/blob/main/Screen%20Shot%202021-06-01%20at%203.35.40%20PM.png?raw=true)
 
 ### Liquidity Pool & Holders
