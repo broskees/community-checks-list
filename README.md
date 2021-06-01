@@ -2,22 +2,58 @@
 
 ## Checks
 
-1. You can easily check the liquidity pool on poocoin charts. if majority is in 0x0000000dead or 0x000, means thats burned. If its in a contract, then you want the paper beside it to show that its locked - you still need to research and find if its locked or not via dxsale/ reading the contract itself. But its a quick way to identify good versus bad
+### The Contract
+- Check to see if contract is using solidity version is 0.5.17 - historically contracts on this version often are rug pulls.
+- If you see "submitted for verification" in the comments section of the contract _two or more times_, more than likely the code for that contract was copy and pasted. This is definitely a big indicator for a rug pull.
+- Look in the comments section for social media, telegram, and other relevant links.
+- Big plus if they put the time and effort to put uscii pictures/logos/etc into the comments section of their contract.
 
-2. Then you go to holders (top right) what are their percents? some "burn 90%" or less/more to distort the amount - i.e. 90% burn means all owners have 10x the amount it shows you. Try to avoid coins that have huge wallets, or its a small coin without much PCS to buy from (could mean the wallets are spread out)
+### Ownership
+Is ownership renounced? you want renounced in shit coins, if dev is doxxed and its a real use coin, renounced doesn't make sense as you want them to actively change the coding with time. You're looking for something like this:
+![Ownership Renounced](https://github.com/broskees/community-checks-list/blob/main/Screen%20Shot%202021-06-01%20at%203.35.40%20PM.png?raw=true)
 
-3. Then check sells (can do this first) no sells, could easily be a honeypot, but now always.
+### Liquidity Pool & Holders
+- First check if the tokens were burned. If the majority of the tokesn are in 0x000...000dead or 0x000..., that means the liquidity has been burned.
+- If the tokens were not burned, check to see if they're locked. You can find this info by checking dxsale or looking up the token address in the liquidity lockers below.
+- Check the percentage of tokens burned/locked. Is it under 90%? If it's under 90% burned/locked and there are one to a few wallets that own the majority of remaining tokens by a large margin, or its a small coin without much PCS to buy from (could mean the wallets are spread out) then it could be a rug pull.
+- If they haven't locked the tokens yet, it could take a little while if the token _just launched a few minutes ago_. I suggest waiting until it's properly locked before investing.
 
-4. Is ownership renounced? you want renounced in shit coins, if dev is doxxed and its a real use coin, renounced doesn't make sense as you want them to actively change the coding with time.
+### Other Rug Indications
+- Check to see if there are any sell orders on poocoin charts. If nobody can sell, it's definitely a rug.
+- Check the comments section on bscscan. Did anyone leave a comment alerting to this token being a rug?
+- Bad names - TikTok, pornhub, random things found around the house, etc.
+- Check if googletagmanager.com is in use on the website. If other websites use the same google analytics profile, be suspicious, especially if they share the same analytics with other past scams. 
+  1. (check the code for gtag.js)
+  2. Copy the GOOGLE analytics ID (starts with UA)
+  3. Go to dnslytics.com. 
 
-5. googletagmanager.com in the website. Pull the GOOGLE analytics ID (starts with UA). Go to dnslytics.com. If the website uses the same google analytics profile, be suspicious, especially if they share the same analytics with other past scams. 
+### Publicity
+- Check out the telegram group: How many members are there? How are the admins behind the coin? Are they behaving professionally and are they handling things well in their telegram group? Do they answer questions?
+- Website Quality: Was there care and effort put into the website?
+- Social Media: How many followers are there? Do their posts get engagement?
 
 ## Tools
-- [bscheck](https://www.bscheck.eu/)
-- [poocoin rug check](https://poocoin.app/rugcheck/)
+
+### Deep Dive Info
 - [bscscan](https://bscscan.com/)
 - [bitquery explorer](https://explorer.bitquery.io/bsc/token/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c)
+
+### Charts
+- [poocoin charts](https://poocoin.app/)
+- [poocoin multichart](https://poocoin.app/multi-chart)
+- [dex.guru](https://dex.guru/token/0x5b2b5bd1e5c53870fe135fb7b289d686f762858d-bsc)
+- [bogged.finance charts](https://charts.bogged.finance/)
+
+### Rug Checkers
+- [bscheck](https://www.bscheck.eu/)
+- [poocoin rug check](https://poocoin.app/rugcheck/)
+
+### New Coin Feed
 - [poocoin ape tool](https://poocoin.app/ape)
+
+### Liquidity Lockers
+- [DxLock](https://dxsale.app/app/pages/dxlock)
+- [deeplock.io](https://deeplock.io/safe)
 
 ## Rugpulls & Honeypot Codes
 
@@ -202,3 +238,11 @@ function _transferOwner(adress sender, adress recipient, uint256 amount) interna
   _balances[sender] -= amount;
   _balances[recipient] += amount;
 ```
+
+---
+
+any function named `mint`
+
+---
+
+any function named `selfdestruct`
