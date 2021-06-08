@@ -1,0 +1,88 @@
+<h1 id="a-community-developed-list-to-spot-honeypots-rug-pulls">A community developed list to spot honeypots &amp; rug pulls</h1>
+<p><strong>All decisions must be made based on your own risk tolerance, this is not financial advice.</strong></p>
+<h2 id="checks">Checks</h2>
+<h3 id="smart-contract">Smart Contract</h3>
+<h4 id="basics">Basics</h4>
+<ul>
+<li>[ ] Is the contract verified?</li>
+<li>[ ] Are they using an up-to-date version of solidity? Historically contracts on older version often are rug pulls. They are also more susceptible to sniper bots.</li>
+<li>[ ] Is the contract NOT a shitty copypasta? If you see &quot;submitted for verification&quot; in the comments section of the contract <em>two or more times</em>, more than likely the code for that contract was copy and pasted. This is definitely a big indicator for a rug pull.</li>
+<li>[ ] Does the comments section contain links for social media, telegram, and other relevant links.</li>
+<li>[ ] Did they put the time and effort to put uscii pictures/logos/etc into the comments section of their contract?</li>
+<li>[ ] Do the hardcoded addresses in the contract check out? They may appear to be for pancakeswap or something similar, but they may be for a personal wallet.</li>
+<li>[ ] Do they have function explainations (comments explaining each function before them). This doesn&#39;t unsually matter for most shitcoins as they don&#39;t have any real world use, so much contracts are just forks of other shitcoins.</li>
+<li>[ ] If they have a github, is the code the same on their smart contract as GitHub? (use <a href="https://diffchecker.com/">diffchecker</a>) This also doesn&#39;t usually matter for most shitcoins. Since they don&#39;t provide any specific function, they generally don&#39;t bother with creating a GitHub.</li>
+<li>[ ] Is ownership renounced? you want renounced in shit coins, if dev is doxxed and its a real use coin, renounced doesn&#39;t make sense as you want them to actively change the coding with time. You&#39;re looking for something like this:</li>
+</ul>
+<p><img src="https://github.com/broskees/community-checks-list/blob/main/Screen%20Shot%202021-06-01%20at%203.35.40%20PM.png?raw=true" alt="Ownership Renounced"></p>
+<h4 id="advanced-mostly-doesn-t-matter-for-shitcoins-">Advanced (mostly doesn&#39;t matter for shitcoins)</h4>
+<ul>
+<li>[ ] After reading each function, does it do what it says it does?</li>
+<li>[ ] Does the governance code have vulnurabilities? If there is, they can be exploited to pass updates that cause a rug.</li>
+</ul>
+<h3 id="liquidity-pool-holders">Liquidity Pool &amp; Holders</h3>
+<ul>
+<li>[ ] Was the liquidity burned? If the majority of the tokens are in 0x000...000dead or 0x000..., that means the liquidity has been burned.</li>
+<li>[ ] If the tokens were not burned, we&#39;re they locked? You can find this info by checking dxsale or looking up the token address in the liquidity lockers below. If you can&#39;t find it there, as for a link in the telegram group, this is often faster.</li>
+<li>[ ] Check the percentage of tokens burned/locked. Is it under 90%? If it&#39;s under 90% burned/locked and there are one to a few wallets that own the majority of remaining tokens by a large margin, or its a small coin without much PCS to buy from (could mean the wallets are spread out) then it could be a rug pull. Sometimes however, the dev will have different wallets that may seem like they hold a lot but they&#39;re really being distributed either for presales, charities, tokenomics, or other legitimate reasons. You&#39;ll have to determine if the project is legitimate for yourself based on the other indicators listed here.<ul>
+<li>If they haven&#39;t locked the tokens yet, it could take a little while if the token <em>just launched a few minutes ago</em>. I suggest waiting until it&#39;s properly locked before investing.</li>
+</ul>
+</li>
+</ul>
+<h3 id="marketing">Marketing</h3>
+<h4 id="branding">Branding</h4>
+<ul>
+<li>[ ] Is the name NOT any of the following: TikTok, pornhub, random things found around the house, etc.</li>
+<li>[ ] Is the name NOT a copy of another projects name? (e.g. &quot;earn finance&quot; instead of &quot;yearn finance&quot;)</li>
+<li>[ ] Is the quality of their logo and other graphics high? Well made graphics is a sign of time and effort.</li>
+</ul>
+<h4 id="social-media">Social Media</h4>
+<ul>
+<li>[ ] Do they have social media accounts?</li>
+<li>[ ] Is there a fair amount of followers? </li>
+<li>[ ] Do their posts get engagement?</li>
+<li>[ ] Does their social check out for strange activity red flags?<ul>
+<li>Everyone is super positive</li>
+<li>The accounts shilling were created recently</li>
+<li>There is never any talk about the unique value of the token itself</li>
+<li>Nobody is critizing anything</li>
+<li>Are the users sharing original thoughts or speaking in generalities only</li>
+</ul>
+</li>
+<li>[ ] Does there Telegram checkout?<ul>
+<li>How many members are there? </li>
+<li>Are the admins behaving professionally in the group? Do they answer questions? Ask Questions!</li>
+<li>Are there active members?</li>
+</ul>
+</li>
+<li>[ ] Do they have a public GitHub? Once again this doesn&#39;t really matter for shitcoins/memecoins. Only real use coins.</li>
+</ul>
+<h4 id="website">Website</h4>
+<ul>
+<li>[ ] Is there a website?</li>
+<li>[ ] Is there a team?</li>
+<li>[ ] Is there team public (doxxed)? Some teams choose to remain anonymous for legitmate reasons, but its a big plus if they&#39;ve taken the risk to be public.</li>
+<li>[ ] Does Google Tag Manager Check Out? Check if googletagmanager.com is in use on the website. If other websites use the same google analytics profile, be suspicious, especially if they share the same analytics with other past scams. <ol>
+<li>(check the code for gtag.js)</li>
+<li>Copy the GOOGLE analytics ID (starts with UA)</li>
+<li>Go to dnslytics.com. </li>
+</ol>
+</li>
+<li>[ ] Is the contract address, pancakeswap, and/or poocoin chart links published clearly on the website?</li>
+<li>[ ] Was there care and effort put into the website design?</li>
+<li>[ ] Is the spelling on the website error free?</li>
+<li>[ ] Do they clearly explain the unique value of their project?</li>
+<li>[ ] Can you verify their claim?</li>
+</ul>
+<h3 id="other-rug-indications">Other Rug Indications</h3>
+<ul>
+<li>[ ] Are there any sell orders on poocoin charts? If nobody can sell, it&#39;s definitely a rug.</li>
+<li>[ ] Is the comments section on bscscan &quot;rug alert&quot; free?</li>
+</ul>
+<h3 id="other-tips">Other tips</h3>
+<ul>
+<li>When attempting to purchase, make sure Metamask or Binance Smart Wallet shows that the token address you&#39;re purchasing is correct.</li>
+<li>Make sure you look up the contract with the actual contract address found at a trusted source instead of using the search function.</li>
+<li>Opening the Holders chart on bscscan/etherscan gives a great quick view of wallets.</li>
+</ul>
+<p><strong>As with anything, sometimes you have legitimate projects that get one or more of these wrong. Personally, I use this list more like a scorecard. I want to see the project get an overall good score before I invest.</strong></p>
