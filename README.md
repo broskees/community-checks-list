@@ -7,71 +7,72 @@
 ### Smart Contract
 
 #### Basics
-- Is the contract verified?
-- Are they using an outdated version of solidity? Historically contracts on older version often are rug pulls. They are also more susceptible to sniper bots.
-- If you see "submitted for verification" in the comments section of the contract _two or more times_, more than likely the code for that contract was copy and pasted. This is definitely a big indicator for a rug pull.
-- Look in the comments section for social media, telegram, and other relevant links.
-- Big plus if they put the time and effort to put uscii pictures/logos/etc into the comments section of their contract.
-- Check any hardcoded addresses in the code. They may appear to be for pancakeswap or something similar, but they may be for a personal wallet.
-- Do they have function explainations (comments explaining each function before them). This doesn't unsually matter for most shitcoins as they don't have any real world use, so much contracts are just forks of other shitcoins.
-- If they have a github, is the code the same on their smart contract as GitHub? (use [diffchecker](https://diffchecker.com/)) This also doesn't usually matter for most shitcoins. Since they don't provide any specific function, they generally don't bother with creating a GitHub.
-- Is ownership renounced? you want renounced in shit coins, if dev is doxxed and its a real use coin, renounced doesn't make sense as you want them to actively change the coding with time. You're looking for something like this:
+- [ ] Is the contract verified?
+- [ ] Are they using an up-to-date version of solidity? Historically contracts on older version often are rug pulls. They are also more susceptible to sniper bots.
+- [ ] Is the contract NOT a shitty copypasta? If you see "submitted for verification" in the comments section of the contract _two or more times_, more than likely the code for that contract was copy and pasted. This is definitely a big indicator for a rug pull.
+- [ ] Does the comments section contain links for social media, telegram, and other relevant links.
+- [ ] Did they put the time and effort to put uscii pictures/logos/etc into the comments section of their contract?
+- [ ] Do the hardcoded addresses in the contract check out? They may appear to be for pancakeswap or something similar, but they may be for a personal wallet.
+- [ ] Do they have function explainations (comments explaining each function before them). This doesn't unsually matter for most shitcoins as they don't have any real world use, so much contracts are just forks of other shitcoins.
+- [ ] If they have a github, is the code the same on their smart contract as GitHub? (use [diffchecker](https://diffchecker.com/)) This also doesn't usually matter for most shitcoins. Since they don't provide any specific function, they generally don't bother with creating a GitHub.
+- [ ] Is ownership renounced? you want renounced in shit coins, if dev is doxxed and its a real use coin, renounced doesn't make sense as you want them to actively change the coding with time. You're looking for something like this:
 
 ![Ownership Renounced](https://github.com/broskees/community-checks-list/blob/main/Screen%20Shot%202021-06-01%20at%203.35.40%20PM.png?raw=true)
 
 #### Advanced (mostly doesn't matter for shitcoins)
 
-- Read each function and see if they do what they say they do.
-- Check the governance for vulnurabilities. If there is, they can be exploited to pass updates that cause a rug.
+- [ ] After reading each function, does it do what it says it does?
+- [ ] Does the governance code have vulnurabilities? If there is, they can be exploited to pass updates that cause a rug.
 
 ### Liquidity Pool & Holders
-- First check if the tokens were burned. If the majority of the tokens are in 0x000...000dead or 0x000..., that means the liquidity has been burned.
-- If the tokens were not burned, check to see if they're locked. You can find this info by checking dxsale or looking up the token address in the liquidity lockers below. If you can't find it there, as for a link in the telegram group, this is often faster.
-- Check the percentage of tokens burned/locked. Is it under 90%? If it's under 90% burned/locked and there are one to a few wallets that own the majority of remaining tokens by a large margin, or its a small coin without much PCS to buy from (could mean the wallets are spread out) then it could be a rug pull. Sometimes however, the dev will have different wallets that may seem like they hold a lot but they're really being distributed either for presales, charities, tokenomics, or other legitimate reasons. You'll have to determine if the project is legitmate for youself based on the other indicators listed here.
-- If they haven't locked the tokens yet, it could take a little while if the token _just launched a few minutes ago_. I suggest waiting until it's properly locked before investing.
+- [ ] Was the liquidity burned? If the majority of the tokens are in 0x000...000dead or 0x000..., that means the liquidity has been burned.
+- [ ] If the tokens were not burned, we're they locked? You can find this info by checking dxsale or looking up the token address in the liquidity lockers below. If you can't find it there, as for a link in the telegram group, this is often faster.
+- [ ] Check the percentage of tokens burned/locked. Is it under 90%? If it's under 90% burned/locked and there are one to a few wallets that own the majority of remaining tokens by a large margin, or its a small coin without much PCS to buy from (could mean the wallets are spread out) then it could be a rug pull. Sometimes however, the dev will have different wallets that may seem like they hold a lot but they're really being distributed either for presales, charities, tokenomics, or other legitimate reasons. You'll have to determine if the project is legitimate for yourself based on the other indicators listed here.
+  - If they haven't locked the tokens yet, it could take a little while if the token _just launched a few minutes ago_. I suggest waiting until it's properly locked before investing.
 
 ### Marketing
 
 #### Branding
-- Not a good sign if its named any of the following: TikTok, pornhub, random things found around the house, etc.
-- Does the name sound like another projects name? (e.g. "earn finance" instead of "yearn finance")
-- How is the quality of their logo and other graphics? Well made graphics is a sign of time and effort.
+- [ ] Is the name NOT any of the following: TikTok, pornhub, random things found around the house, etc.
+- [ ] Is the name NOT a copy of another projects name? (e.g. "earn finance" instead of "yearn finance")
+- [ ] Is the quality of their logo and other graphics high? Well made graphics is a sign of time and effort.
 
 #### Social Media
-- Do they have social media accounts?
-- How many followers are there? Do their posts get engagement?
-- Is there strange activity? 
+- [ ] Do they have social media accounts?
+- [ ] Is there a fair amount of followers? 
+- [ ] Do their posts get engagement?
+- [ ] Does their social check out for strange activity red flags?
   - Everyone is super positive
   - The accounts shilling were created recently
   - There is never any talk about the unique value of the token itself
   - Nobody is critizing anything
   - Are the users sharing original thoughts or speaking in generalities only
-- Telegram: 
+- [ ] Does there Telegram checkout?
   - How many members are there? 
   - Are the admins behaving professionally in the group? Do they answer questions? Ask Questions!
   - Are there active members?
-- Do they have a public GitHub? Once again this doesn't really matter for shitcoins/memecoins. Only real use coins.
+- [ ] Do they have a public GitHub? Once again this doesn't really matter for shitcoins/memecoins. Only real use coins.
 
 #### Website
-- Is there a website?
-- Is there a team?
-- Is there team public (doxxed)? Some teams choose to remain anonymous for legitmate reasons, but its a big plus if they've taken the risk to be public.
-- Check if googletagmanager.com is in use on the website. If other websites use the same google analytics profile, be suspicious, especially if they share the same analytics with other past scams. 
+- [ ] Is there a website?
+- [ ] Is there a team?
+- [ ] Is there team public (doxxed)? Some teams choose to remain anonymous for legitmate reasons, but its a big plus if they've taken the risk to be public.
+- [ ] Does Google Tag Manager Check Out? Check if googletagmanager.com is in use on the website. If other websites use the same google analytics profile, be suspicious, especially if they share the same analytics with other past scams. 
   1. (check the code for gtag.js)
   2. Copy the GOOGLE analytics ID (starts with UA)
   3. Go to dnslytics.com. 
-- Is the contract address, pancakeswap, and/or poocoin chart links published clearly on the website?
-- Was there care and effort put into the website design?
-- Are there spelling errors?
-- Do they clearly explain the unique value of their project?
-- Can you verify their claim?
+- [ ] Is the contract address, pancakeswap, and/or poocoin chart links published clearly on the website?
+- [ ] Was there care and effort put into the website design?
+- [ ] Is the spelling on the website error free?
+- [ ] Do they clearly explain the unique value of their project?
+- [ ] Can you verify their claim?
 
 ### Other Rug Indications
-- Check to see if there are any sell orders on poocoin charts. If nobody can sell, it's definitely a rug.
-- Check the comments section on bscscan. Did anyone leave a comment alerting to this token being a rug?
-- When attempting to purchase, make sure Metamask or Binance Smart Wallet shows that the token address you're purchasing is correct.
+- [ ] Are there any sell orders on poocoin charts? If nobody can sell, it's definitely a rug.
+- [ ] Is the comments section on bscscan "rug alert" free?
 
 ### Other tips
+- When attempting to purchase, make sure Metamask or Binance Smart Wallet shows that the token address you're purchasing is correct.
 - Make sure you look up the contract with the actual contract address found at a trusted source instead of using the search function.
 - Opening the Holders chart on bscscan/etherscan gives a great quick view of wallets.
 
