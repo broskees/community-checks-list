@@ -2,7 +2,7 @@
 
 **All decisions must be made based on your own risk tolerance, this is not financial advice.**
 
-If you want to use this list as a _clickable checklist_ [click here](https://htmlpreview.github.io/?https://github.com/broskees/community-checks-list/blob/main/clickable-checks.html)
+If you want to use this list as a _clickable checklist_ [click here](https://htmlpreview.github.io/?https://github.com/broskees/community-checks-list/blob/main/clickable-checks.html).
 
 ## Checks
 
