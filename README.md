@@ -2,6 +2,8 @@
 
 **All decisions must be made based on your own risk tolerance, this is not financial advice.**
 
+Contributions are welcome and appreciated. This is meant to be a _community_ checklist. Please contribute if you have something to add.
+
 If you want to use this list as a _clickable checklist_ [click here](https://htmlpreview.github.io/?https://github.com/broskees/community-checks-list/blob/main/clickable-checks.html).
 
 ## Checks
@@ -12,7 +14,7 @@ If you want to use this list as a _clickable checklist_ [click here](https://htm
 - [ ] Is the contract verified?
 - [ ] Are they using an up-to-date version of solidity? Historically contracts on older version often are rug pulls. They are also more susceptible to sniper bots.
 - [ ] Is the contract NOT a shitty copypasta? If you see "submitted for verification" in the comments section of the contract _two or more times_, more than likely the code for that contract was copy and pasted. This is definitely a big indicator for a rug pull.
-- [ ] Does the comments section contain links for social media, telegram, and other relevant links.
+- [ ] Does the comments section contain links for social media, telegram, and other relevant links?
 - [ ] Did they put the time and effort to put uscii pictures/logos/etc into the comments section of their contract?
 - [ ] Do the hardcoded addresses in the contract check out? They may appear to be for pancakeswap or something similar, but they may be for a personal wallet.
 - [ ] Do they have function explainations (comments explaining each function before them). This doesn't unsually matter for most shitcoins as they don't have any real world use, so much contracts are just forks of other shitcoins.
