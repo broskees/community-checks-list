@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <style>
+      body {
+        margin: 40px auto;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        max-width: 850px;
+        line-height: 1.4;
+      }
+      li { margin: 7.5px 0;}
+      ul {
+        list-style: none;
+        padding-inline-start: 15.5px;
+      }
+      ul ul { list-style: initial; }
+      ul ul,
+      ul ol { padding-inline-start: 45px; }
+      input[type=checkbox]{
+        position:absolute;
+        opacity: 0;
+        z-index: -9999;
+      }
+      input[type=checkbox] + label{
+        position: relative;
+        padding-left: 24px;
+        margin-right: 10px;
+      }
+      input[type=checkbox] + label .indicator{
+        position: absolute;
+        left: -4px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        border-radius:3px;
+        border:1px solid #ddd;
+        cursor: pointer;
+      }
+      input[type=checkbox]:checked + label .indicator{
+        background: #a123cb;
+      }
+      input[type=checkbox]:checked + label .indicator::after{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 16px;
+        border: 4px solid #fff;
+        border-left: none;
+        border-top: none;
+        transform: rotate(45deg);
+        left: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="a-community-developed-list-to-spot-honeypots-rug-pulls">A community developed checklist to spot honeypots &amp; rug pulls</h1>
+    <p><strong>All decisions must be made based on your own risk tolerance, this is not financial advice.</strong></p>
+    <h2 id="checks">Checks</h2>
+    <h3 id="smart-contract">Smart Contract</h3>
+    <h4 id="basics">Basics</h4>
+    <ul>
+      <li><input type="checkbox" id="0"></input><label for="0"><span class="indicator"></span></label> Is the contract verified?</li>
+      <li><input type="checkbox" id="1"></input><label for="1"><span class="indicator"></span></label> Are they using an up-to-date version of solidity? Historically contracts on older version often are rug pulls. They are also more susceptible to sniper bots.</li>
+      <li><input type="checkbox" id="2"></input><label for="2"><span class="indicator"></span></label> Is the contract NOT a shitty copypasta? If you see &quot;submitted for verification&quot; in the comments section of the contract <em>two or more times</em>, more than likely the code for that contract was copy and pasted. This is definitely a big indicator for a rug pull.</li>
+      <li><input type="checkbox" id="3"></input><label for="3"><span class="indicator"></span></label> Does the comments section contain links for social media, telegram, and other relevant links.</li>
+      <li><input type="checkbox" id="4"></input><label for="4"><span class="indicator"></span></label> Did they put the time and effort to put uscii pictures/logos/etc into the comments section of their contract?</li>
+      <li><input type="checkbox" id="5"></input><label for="5"><span class="indicator"></span></label>> Do the hardcoded addresses in the contract check out? They may appear to be for pancakeswap or something similar, but they may be for a personal wallet.</li>
+      <li><input type="checkbox" id="6"></input><label for="6"><span class="indicator"></span></label> Do they have function explainations (comments explaining each function before them). This doesn&#39;t unsually matter for most shitcoins as they don&#39;t have any real world use, so much contracts are just forks of other shitcoins.</li>
+      <li><input type="checkbox" id="7"></input><label for="7"><span class="indicator"></span></label> If they have a github, is the code the same on their smart contract as GitHub? (use <a href="https://diffchecker.com/">diffchecker</a>) This also doesn&#39;t usually matter for most shitcoins. Since they don&#39;t provide any specific function, they generally don&#39;t bother with creating a GitHub.</li>
+      <li><input type="checkbox" id="8"></input><label for="8"><span class="indicator"></span></label> Is ownership renounced? you want renounced in shit coins, if dev is doxxed and its a real use coin, renounced doesn&#39;t make sense as you want them to actively change the coding with time. You&#39;re looking for something like this:<p><img src="https://github.com/broskees/community-checks-list/blob/main/Screen%20Shot%202021-06-01%20at%203.35.40%20PM.png?raw=true" alt="Ownership Renounced"></p></li>
+    </ul>
+    <h4 id="advanced-mostly-doesn-t-matter-for-shitcoins-">Advanced (mostly doesn&#39;t matter for shitcoins)</h4>
+    <ul>
+      <li><input type="checkbox" id="9"></input><label for="9"><span class="indicator"></span></label> After reading each function, does it do what it says it does?</li>
+      <li><input type="checkbox" id="10"></input><label for="10"><span class="indicator"></span></label> Does the governance code have vulnurabilities? If there is, they can be exploited to pass updates that cause a rug.</li>
+    </ul>
+    <h3 id="liquidity-pool-holders">Liquidity Pool &amp; Holders</h3>
+    <ul>
+      <li><input type="checkbox" id="11"></input><label for="11"><span class="indicator"></span></label> Was the liquidity burned? If the majority of the tokens are in 0x000...000dead or 0x000..., that means the liquidity has been burned.</li>
+      <li><input type="checkbox" id="12"></input><label for="12"><span class="indicator"></span></label> If the tokens were not burned, we&#39;re they locked? You can find this info by checking dxsale or looking up the token address in the liquidity lockers below. If you can&#39;t find it there, as for a link in the telegram group, this is often faster.</li>
+      <li><input type="checkbox" id="13"></input><label for="13"><span class="indicator"></span></label> Check the percentage of tokens burned/locked. Is it under 90%? If it&#39;s under 90% burned/locked and there are one to a few wallets that own the majority of remaining tokens by a large margin, or its a small coin without much PCS to buy from (could mean the wallets are spread out) then it could be a rug pull. Sometimes however, the dev will have different wallets that may seem like they hold a lot but they&#39;re really being distributed either for presales, charities, tokenomics, or other legitimate reasons. You&#39;ll have to determine if the project is legitimate for yourself based on the other indicators listed here.
+        <ul style="list-style-type: initial">
+          <li>If they haven&#39;t locked the tokens yet, it could take a little while if the token <em>just launched a few minutes ago</em>. I suggest waiting until it&#39;s properly locked before investing.</li>
+        </ul>
+      </li>
+    </ul>
+    <h3 id="marketing">Marketing</h3>
+    <h4 id="branding">Branding</h4>
+    <ul>
+      <li><input type="checkbox" id="14"></input><label for="14"><span class="indicator"></span></label> Is the name NOT any of the following: TikTok, pornhub, random things found around the house, etc.</li>
+      <li><input type="checkbox" id="15"></input><label for="15"><span class="indicator"></span></label> Is the name NOT a copy of another projects name? (e.g. &quot;earn finance&quot; instead of &quot;yearn finance&quot;)</li>
+      <li><input type="checkbox" id="16"></input><label for="16"><span class="indicator"></span></label> Is the quality of their logo and other graphics high? Well made graphics is a sign of time and effort.</li>
+    </ul>
+    <h4 id="social-media">Social Media</h4>
+    <ul>
+      <li><input type="checkbox" id="17"></input><label for="17"><span class="indicator"></span></label> Do they have social media accounts?</li>
+      <li><input type="checkbox" id="18"></input><label for="18"><span class="indicator"></span></label> Is there a fair amount of followers? </li>
+      <li><input type="checkbox" id="19"></input><label for="19"><span class="indicator"></span></label> Do their posts get engagement?</li>
+      <li><input type="checkbox" id="20"></input><label for="20"><span class="indicator"></span></label> Does their social check out for strange activity red flags?
+        <ul>
+          <li>Everyone is super positive</li>
+          <li>The accounts shilling were created recently</li>
+          <li>There is never any talk about the unique value of the token itself</li>
+          <li>Nobody is critizing anything</li>
+          <li>Are the users sharing original thoughts or speaking in generalities only</li>
+        </ul>
+      </li>
+      <li><input type="checkbox" id="21"></input><label for="21"><span class="indicator"></span></label> Does there Telegram checkout?
+        <ul>
+          <li>How many members are there? </li>
+          <li>Are the admins behaving professionally in the group? Do they answer questions? Ask Questions!</li>
+          <li>Are there active members?</li>
+        </ul>
+      </li>
+      <li><input type="checkbox"></input> Do they have a public GitHub? Once again this doesn&#39;t really matter for shitcoins/memecoins. Only real use coins.</li>
+    </ul>
+    <h4 id="website">Website</h4>
+    <ul>
+      <li><input type="checkbox" id="22"></input><label for="22"><span class="indicator"></span></label> Is there a website?</li>
+      <li><input type="checkbox" id="23"></input><label for="23"><span class="indicator"></span></label> Is there a team?</li>
+      <li><input type="checkbox" id="24"></input><label for="24"><span class="indicator"></span></label> Is there team public (doxxed)? Some teams choose to remain anonymous for legitmate reasons, but its a big plus if they&#39;ve taken the risk to be public.</li>
+      <li><input type="checkbox" id="25"></input><label for="25"><span class="indicator"></span></label> Does Google Tag Manager Check Out? Check if googletagmanager.com is in use on the website. If other websites use the same google analytics profile, be suspicious, especially if they share the same analytics with other past scams. 
+        <ol>
+          <li>(check the code for gtag.js)</li>
+          <li>Copy the GOOGLE analytics ID (starts with UA)</li>
+          <li>Go to dnslytics.com. </li>
+        </ol>
+      </li>
+      <li><input type="checkbox" id="26"></input><label for="26"><span class="indicator"></span></label> Is the contract address, pancakeswap, and/or poocoin chart links published clearly on the website?</li>
+      <li><input type="checkbox" id="27"></input><label for="27"><span class="indicator"></span></label> Was there care and effort put into the website design?</li>
+      <li><input type="checkbox" id="28"></input><label for="28"><span class="indicator"></span></label> Is the spelling on the website error free?</li>
+      <li><input type="checkbox" id="29"></input><label for="29"><span class="indicator"></span></label> Do they clearly explain the unique value of their project?</li>
+      <li><input type="checkbox" id="30"></input><label for="30"><span class="indicator"></span></label> Can you verify their claim?</li>
+    </ul>
+    <h3 id="other-rug-indications">Other Rug Indications</h3>
+    <ul>
+      <li><input type="checkbox" id="31"></input><label for="31"><span class="indicator"></span></label> Are there any sell orders on poocoin charts? If nobody can sell, it&#39;s definitely a rug.</li>
+      <li><input type="checkbox" id="32"></input><label for="32"><span class="indicator"></span></label> Is the comments section on bscscan &quot;rug alert&quot; free?</li>
+    </ul>
+    <h3 id="other-tips">Other tips</h3>
+    <ul style="list-style: initial; padding-inline-start: 40px">
+      <li>When attempting to purchase, make sure Metamask or Binance Smart Wallet shows that the token address you&#39;re purchasing is correct.</li>
+      <li>Make sure you look up the contract with the actual contract address found at a trusted source instead of using the search function.</li>
+      <li>Opening the Holders chart on bscscan/etherscan gives a great quick view of wallets.</li>
+    </ul>
+    <p><strong>As with anything, sometimes you have legitimate projects that get one or more of these wrong. Personally, I use this list more like a scorecard. I want to see the project get an overall good score before I invest.</strong></p>
+  </body>
+</html>
